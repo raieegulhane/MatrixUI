@@ -1,0 +1,47 @@
+/************ google font ************/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/************ variables ************/
+:root {
+    /* font */
+    --head-font: 'Abel', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+
+
+    /* colors */
+    --background-color: #0f131a;
+    --primary-color: #169DE0;
+    --secondary-color: #1a1d24;
+
+    --black: #111;
+    --white: #e9ebf0;
+    --gray1: #aaaaaa;
+    --gray2: #5c6066;
+    --gray3: #3c3f43;
+    --gray4: #3c3c3c;
+    --gray5: #333333;
+
+    --red: #f44336;
+    --orange: #ff9800;
+    --yellow: #ffc757;
+    --green: #58b158;
+    --cyan: #00bcd4;
+    --blue: #1499ef;
+    --voilet: #673ab7;
+
+    --red-subtle: #f4433685;
+    --orange-subtle: #ff980085;
+    --green-subtle: #58b15885;
+    --blue-subtle: #1499ef85;
+
+
+    /* padding */
+
+    /* border-radius */
+    --br-sq: 5px;
+    --br-cr: 2rem;
+    --br-rd: 50%;
+
+    /* margin */
+}
