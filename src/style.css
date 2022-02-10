@@ -44,4 +44,40 @@
     --br-rd: 50%;
 
     /* margin */
+
+    /* length */
+    --len1: 5px;
+    --len2: 7px;
+}
+
+
+/************ general ************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--white);
+    font-family: var(--text-font);
+}
+
+body::-webkit-scrollbar {
+    width: var(--len2);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray5);
+    border-radius: var(--len2);
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: var(--len2);
 }
