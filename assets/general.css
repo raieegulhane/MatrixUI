@@ -106,3 +106,18 @@
 .list-noBullets {
     list-style: none;
 }
+
+
+/* headings */
+.heading-lg {
+    font-size: 3rem;
+}
+
+.heading-md {
+    font-size: 2rem;
+}
+
+.heading-sm {
+    font-size: 1.5rem;
+}
+

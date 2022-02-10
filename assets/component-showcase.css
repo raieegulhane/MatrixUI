@@ -1,3 +1,42 @@
+/****** sidebar + component showcase *******/
 .container_components {
     grid-template-columns: 1fr 5fr;
 }
+
+/****** main - component showcase *******/
+.component {
+    width: 85%;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+
+.component_description {
+    margin: 1rem 0 1.5rem;
+}
+
+.component_variant-showcase {
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.variant_container {
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.variant-example, 
+.variant-code {
+    background-color: var(--secondary-color);
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 7px;
+    margin: 1rem 0;
+}
+
+.variant-example {
+    min-height: 150px;
+}
+
+
+
+
