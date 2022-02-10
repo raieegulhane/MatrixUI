@@ -37,6 +37,15 @@
     min-height: 150px;
 }
 
+.variant-code {
+    max-width: 450px;
+}
+
+.code-snippet {
+    width: 100%;
+    margin: auto;
+}
+
 
 
 
