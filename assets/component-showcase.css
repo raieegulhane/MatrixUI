@@ -38,12 +38,39 @@
 }
 
 .variant-code {
-    max-width: 450px;
+    max-height: 250px;
+    overflow-y: scroll;
 }
 
-.code-snippet {
+.variant-code::-webkit-scrollbar {
+    width: 3px;
+}
+.variant-code::-webkit-scrollbar-thumb {
+    background-color: var(--gray3);
+    border-radius: 3px;
+}
+
+.variant-code::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+}
+
+.code_snippet {
     width: 100%;
-    margin: auto;
+}
+
+/* spacing */
+.spacing-hr {
+    margin-right: 1.5rem;
+}
+
+.spacing-vr {
+    margin-bottom: 2rem;
+}
+
+.icon {
+    position: relative;
+    font-size: 1.75rem;
 }
 
 
