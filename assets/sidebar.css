@@ -1,0 +1,45 @@
+.sidebar {
+    background: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 3px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--gray3);
+    border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 3px;
+}
+
+.sidebar_heading {
+    padding: 2rem 0 1rem 2rem;
+}
+
+.sidebar_item {
+    padding: 0.75rem 2rem;
+}
+
+.sidebar_item:hover {
+    background-color: var(--gray3);
+}
+
+.sidebar_item-selected {
+    background-color: var(--gray3);
+}
+
+.sidebar_item a {
+    color: var(--white);
+}
+
+.sidebar_item-selected a {
+    color: var(--primary-color);
+    font-weight: bold;
+}

@@ -27,22 +27,22 @@
 .flex-col {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 
 /* list without style*/
-.list-noStyle {
-    list-style: none;
-}
+
 
 
 /* grids */
-.grid-row {
+.grid {
     display: grid;
+    grid-auto-flow: row;
+}
+
+.grid-center {
     justify-content: center;
     align-items: center;
-    grid-auto-flow: row;
 }
 
 .grid-2col {
@@ -95,4 +95,14 @@
     color: var(--blue2);
     border-color: var(--blue2);
     transition: 0.5s ease;
+}
+
+
+/* lists */
+.list-noStyle {
+    list-style: none;
+}
+
+.list-noBullets {
+    list-style: none;
 }
