@@ -1,6 +1,12 @@
+.navbar_container {
+    border-bottom: 1px solid var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
 .navbar {
     width: 90%;
-    margin: 2rem auto;
+    padding: 1.5rem 0 1rem 0;
+    margin: auto;
 }
 
 .navbar_logo {

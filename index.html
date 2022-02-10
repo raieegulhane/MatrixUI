@@ -9,21 +9,58 @@
     <link rel="stylesheet" href="/src/style.css">
     <link rel="stylesheet" href="/assets/general.css">
     <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/landing-main.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!------------ navbar ------------>
-    <nav class="navbar flex-row flex-center">
-        <a class="link-noDecoration" href="/index.html">
-            <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
-        </a>
-        <ul class="navbar_list flex-row list-noStyle">
-            <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/index.html">Home</a></li>
-            <li><a class="navbar_pill link-noDecoration" href="#">Components</a></li>
-            <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
-            <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
-        </ul>
-    </nav>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-center">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!------------ main ------------>
+    <main class="main grid-row grid-2col">
+        <div class="main_intro flex-col">
+            <h1 class="main_heading heading">Matrix UI</h1>
+            <p>
+                MatrixUI is a free, open-source and customizable suite of components, sensible UI design, and a friendly development experience to help you build your projects with ease.
+            </p>
+            <div class="main_btn-container flex-row">
+                <a href="#" class="btn btn-primary btn-sq link-noDecoration">Components</a>
+                <a href="#" class="btn btn-outline btn-sq link-noDecoration">Installation</a>
+            </div>
+        </div>
+        <img class="img-100pr" src="/images/logo_MatrixUI_short_blue.svg" alt="MatrixUI Logo">
+    </main>
+
+
+    <!------------ footer ------------>
+    <footer class="footer">
+        <div class="footer_text">
+            Made with <span>&lt;/&gt;</span> by Raiee  
+        </div>
+        <div class="footer_socials">
+            <a class="link-noDecoration" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="link-noDecoration" href="#"><i class="fa-brands fa-github"></i></i></a>
+            <a class="link-noDecoration" href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+        </div>
+        <div class="footer_conclusion">
+            &copy;2022, MatrixUI
+        </div>
+    </footer>
 
 </body>
 </html>

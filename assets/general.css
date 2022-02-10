@@ -1,8 +1,16 @@
+/* heading */
+.heading {
+    font-family: var(--head-font);
+}
+
 /* link without text decoration */
 .link-noDecoration {
     text-decoration: none;
 }
 
+
+
+/* ************************************************************ */
 
 /* flex - row */
 .flex-row {
@@ -16,8 +24,75 @@
     align-items: center;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-/* inline l*/
+
+/* list without style*/
 .list-noStyle {
     list-style: none;
+}
+
+
+/* grids */
+.grid-row {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+.grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* images */
+.img-100pr {
+    width: 100%;
+}
+
+
+/* button */
+.btn {
+    position: relative;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.btn-sq {
+    border-radius: var(--br-sq);
+}
+
+.btn-primary, 
+.btn-outline {
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.btn-outline {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue2);
+    border-color: var(--blue2);
+    transition: 0.5s ease;
+}
+
+.btn-outline:hover {
+    color: var(--blue2);
+    border-color: var(--blue2);
+    transition: 0.5s ease;
 }
