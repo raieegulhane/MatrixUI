@@ -14,11 +14,18 @@
 }
 
 .flex-row {
+    display: flex;
     flex-direction: row;
 }
 
 .flex-col {
+    display: flex;
     flex-direction: column;
+}
+
+.flex-centered {
+    justify-content: center;
+    align-items: center;
 }
 
 .flex_justify-start {
@@ -83,4 +90,6 @@
 .item4 {
     padding: 2rem 0.5rem;
 }
+
+
 

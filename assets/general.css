@@ -11,45 +11,6 @@
 
 
 /* ************************************************************ */
-
-/* flex - row */
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-}
-
-.flex-centered {
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* list without style*/
-
-
-
-/* grids */
-.grid {
-    display: grid;
-    grid-auto-flow: row;
-}
-
-.grid-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.grid-2col {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-
 /* images */
 .img-100pr {
     width: 100%;
