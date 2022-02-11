@@ -37,7 +37,7 @@
     <div class="container_components grid">
         <!----- sidebar ----->
         <aside class="sidebar flex-col">
-            <h1 class="sidebar_heading heading heading-md">Components</h1>
+            <h1 class="sidebar_heading heading">Components</h1>
             <ul class="sidebar_list list-noBullets">
                 <li class="sidebar_item"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
                 <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
@@ -59,7 +59,7 @@
         </aside>
     
         <main class="component">
-            <h1 class="heading heading-lg">Grids</h1>
+            <h1 class="component_heading heading">Grids</h1>
             <p class="component_description">
                 Grids are an easy way of structuring webpages. Components of the website can be arranged into rows and columns to create complex layouts.
             </p>
@@ -67,8 +67,8 @@
             <div class="component_variant-showcase flex-col">
                 <!------- basic multi-column grids ------->
                 <div class="variant_container">
-                    <h2 class="variant-heading heading-sm heading">Basic Multi-Column Grids</h2>
-                    <p class="variant-description">
+                    <h2 class="variant_heading heading">Basic Multi-Column Grids</h2>
+                    <p class="variant_description">
                         Use class: <code class="code class">grid</code>.
                         <br>
                         Number of rows or columns in which a grid needs to be divided is given using <code class="code">grid-template-row</code> or <code class="code">grid-template-column</code> properties respectively.
@@ -82,7 +82,7 @@
                         for 2, 3, 4, and 5 columns, each taking one fraction (1fr) of the available space.
                         <br>
                     </p>
-                    <div class="variant-example">
+                    <div class="variant_example">
                         <div class="grid grid-2col grid_container grid_gap spacing-vr">
                             <div class="grid_item">Grid item 1</div>
                             <div class="grid_item">Grid item 2</div>
@@ -106,7 +106,7 @@
                             <div class="grid_item">Grid item 5</div>
                         </div>
                     </div>
-                    <div class="variant-code">
+                    <div class="variant_code">
                         <code>
                             <iframe
                                 class="code_snippet"
@@ -120,8 +120,8 @@
 
                 <!------- common layouts ------->
                 <div class="variant_container">
-                    <h2 class="variant-heading heading-sm heading">Common Layouts</h2>
-                    <p class="variant-description">
+                    <h2 class="variant_heading heading">Common Layouts</h2>
+                    <p class="variant_description">
                         This example showcases some basic common layouts that can be acheived using grids.
                         <br>
                         CSS classes used in the example are:
@@ -132,7 +132,7 @@
                         - <code class="code class">grid-31layout</code> for 3:1 layout. <br>
                         This webpage is example of 1:5 layout. the sidebar takes up 1 fraction of the avaible space and the area for component showcase takes 5 fractions of area.
                     </p>
-                    <div class="variant-example">
+                    <div class="variant_example">
                         <div class="grid grid-12layout grid_container grid-gap spacing-vr">
                             <div class="grid_item">Grid item 1 - 1fr</div>
                             <div class="grid_item">Grid item 2 - 2fr</div>
@@ -150,7 +150,7 @@
                             <div class="grid_item">Grid item 2 - 1fr</div>
                         </div>
                     </div>
-                    <div class="variant-code">
+                    <div class="variant_code">
                         <code>
                             <iframe
                                 class="code_snippet"
@@ -165,13 +165,13 @@
 
                 <!------- holygrail layout ------->
                 <div class="variant_container">
-                    <h2 class="variant-heading heading-sm heading">Holy Grail Layout</h2>
-                    <p class="variant-description">
+                    <h2 class="variant_heading heading">Holy Grail Layout</h2>
+                    <p class="variant_description">
                         This layout is very commonly used on web. It containes a header at the top, a main content area with fixed-width navigation on the left, content in the middle and a fixed-width sidebar on the right and then a footer.
                         <br>
                         Use class <code class="code class">grid_holygrail</code> and then add your content in divs with class <code class="code class">grid_header</code>, <code class="code class">grid_aside</code>, <code class="code class">grid_main</code>, <code class="code class">grid_footer</code>.
                     </p>
-                    <div class="variant-example">
+                    <div class="variant_example">
                         <div class="grid grid_holygrail grid-gap">
                             <div class="grid_item grid_header">Header</div>
                             <div class="grid_item grid_aside">Aside</div>
@@ -179,7 +179,7 @@
                             <div class="grid_item grid_footer">Footer</div>
                         </div>
                     </div>
-                    <div class="variant-code">
+                    <div class="variant_code">
                         <code>
                             <iframe
                             class="code_snippet"

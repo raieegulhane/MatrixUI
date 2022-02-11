@@ -10,6 +10,11 @@
     margin: 0 auto;
 }
 
+.component_heading {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
 .component_description {
     max-width: 90%;
     margin: 1rem 0 2rem;
@@ -25,13 +30,18 @@
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.variant-description {
+.variant_heading {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+}
+
+.variant_description {
     max-width: 90%;
     margin: 0.5rem 0 1.25rem;
 }
 
-.variant-example, 
-.variant-code {
+.variant_example, 
+.variant_code {
     background-color: var(--secondary-color);
     width: 90%;
     padding: 1.5rem;
@@ -39,24 +49,24 @@
     margin: 1rem 0;
 }
 
-.variant-example {
+.variant_example {
     min-height: 150px;
 }
 
-.variant-code {
+.variant_code {
     max-height: 250px;
     overflow-y: scroll;
 }
 
-.variant-code::-webkit-scrollbar {
+.variant_code::-webkit-scrollbar {
     width: 3px;
 }
-.variant-code::-webkit-scrollbar-thumb {
+.variant_code::-webkit-scrollbar-thumb {
     background-color: var(--gray3);
     border-radius: 3px;
 }
 
-.variant-code::-webkit-scrollbar-track {
+.variant_code::-webkit-scrollbar-track {
     background: transparent;
     border-radius: 3px;
 }
