@@ -1,0 +1,69 @@
+.nav_container {
+    background-color: var(--gray5);
+    padding: 0.75rem 2rem;
+    border-radius: var(--br-sq);
+}
+
+.nav_logo {
+    color: var(--primary-color);
+    font-size: 1.75rem;
+}
+
+.nav_list,
+.nav_list-primary,
+.nav_list-secondary {
+    gap: 1.75rem;
+}
+
+.nav_list {
+    margin-left: auto;
+}
+
+.nav_list-primary {
+    margin-left: 2.5rem;
+}
+
+.nav_list-secondary {
+    margin-left: auto;
+}
+
+.nav_item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.nav_button {
+    gap: 1rem;
+    margin-left: auto;
+}
+
+.nav_button button {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.7rem;
+}
+
+.nav_button .btn-outline {
+    background-color: var(--gray5);
+}
+
+.nav_searchbox,
+.nav_searchbox-input {
+    background-color: var(--white);
+    color: var(--gray5);
+    font-size: 0.75rem;
+    border-color: var(--white);
+    outline: none;
+}
+
+.nav_searchbox {
+    padding: 0.4rem 0.75rem;
+}
+
+.nav_searchbox {
+    margin-left: auto;
+}
+
+.nav_container-secondary {
+    gap: 1.75rem;
+    margin-left: auto;
+}

@@ -25,6 +25,10 @@
     border-radius: var(--br-sq);
 }
 
+.btn-cr {
+    border-radius: 2rem;
+}
+
 .btn-primary, 
 .btn-outline {
     font-weight: bold;
@@ -55,6 +59,10 @@
 
 
 /* lists */
+.list_inline {
+    display: inline;
+}
+
 .list-noStyle {
     list-style: none;
 }
@@ -62,6 +70,8 @@
 .list-noBullets {
     list-style: none;
 }
+
+
 
 
 /* headings */
@@ -77,6 +87,22 @@
     font-size: 1.5rem;
 } */
 
+/* // input */
+.container_input-icon {
+    box-sizing: border-box;
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid var(--gray5);
+}
+
+.container_input-icon--sq {
+    border-radius: 5px;
+}
+
+
+.input-icon {
+    border: none;
+}
 
 
 
