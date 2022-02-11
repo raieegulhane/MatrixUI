@@ -1,0 +1,36 @@
+.img-100pr {
+    width: 100%;
+}
+
+.img-75pr {
+    width: 75%;
+}
+
+.img-50pr {
+    width: 50%;
+}
+
+.img-25pr {
+    width: 25%;
+}
+
+.img {
+    height: 200px;
+    width: 200px;
+}
+
+.img-sq {
+    border-radius: 5px;
+}
+
+.img-cr {
+    border-radius: 2rem;
+}
+
+.img-rd {
+    border-radius: 50%;
+}
+
+.img-border {
+    border: 5px solid var(--white);
+}
