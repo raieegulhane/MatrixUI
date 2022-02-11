@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/general.css">
+    <link rel="stylesheet" href="/components/grids/grids.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/component-showcase.css">
+    <link rel="stylesheet" href="/components/flex/flex.css">
+    
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>MatrixUI | Grids</title>
+</head>
+<body>
+
+    <!------------ navbar ------------>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-centered">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="/components/overview/overview.html">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ container ------------>
+    <div class="container_components grid">
+        <!----- sidebar ----->
+        <aside class="sidebar flex-col">
+            <h1 class="sidebar_heading heading heading-md">Components</h1>
+            <ul class="sidebar_list list-noBullets">
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/badge/badge.html">Badge</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/button/button.html">Button</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/cards/cards.html">Cards</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/flex/flex.html">Flex</a></li>
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/grids/grids.html">Grids</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/images/images.html">Images</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/input/input.html">Input</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/lists/lists.html">List</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/modal/modal.html">Modal</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/rating/rating.html">Rating</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/text_utilities/text_utilities.html">Text Utilities</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/toast/toast.html">Toast</a></li>
+            </ul>
+        </aside>
+    
+        <main class="component">
+            <h1 class="heading heading-lg">Grids</h1>
+            <p class="component_description">
+                Grids are an easy way of structuring webpages. Components of the website can be arranged into rows and columns to create complex layouts.
+            </p>
+    
+            <div class="component_variant-showcase flex-col">
+                <!------- basic multi-column grids ------->
+                <div class="variant_container">
+                    <h2 class="variant-heading heading-sm heading">Basic Multi-Column Grids</h2>
+                    <p class="variant-description">
+                        Use class: <code class="code class">grid</code>.
+                        <br>
+                        Number of rows or columns in which a grid needs to be divided is given using <code class="code">grid-template-row</code> or <code class="code">grid-template-column</code> properties respectively.
+                        <br>
+                        Here examples of basic multi-column grids are shown. Classes used are:
+                        <br>
+                        - <code class="code class">grid_2col</code><br>
+                        - <code class="code class">grid_3col</code><br>
+                        - <code class="code class">grid_4col</code><br>
+                        - <code class="code class">grid_5col</code><br>
+                        for 2, 3, 4, and 5 columns, each taking one fraction (1fr) of the available space.
+                        <br>
+                    </p>
+                    <div class="variant-example">
+                        <div class="grid grid-2col grid_container grid_gap spacing-vr">
+                            <div class="grid_item">Grid item 1</div>
+                            <div class="grid_item">Grid item 2</div>
+                        </div>
+                        <div class="grid grid-3col grid_container grid-gap spacing-vr">
+                            <div class="grid_item">Grid item 1</div>
+                            <div class="grid_item">Grid item 2</div>
+                            <div class="grid_item">Grid item 3</div>
+                        </div>
+                        <div class="grid grid-4col grid_container grid-gap spacing-vr">
+                            <div class="grid_item">Grid item 1</div>
+                            <div class="grid_item">Grid item 2</div>
+                            <div class="grid_item">Grid item 3</div>
+                            <div class="grid_item">Grid item 4</div>
+                        </div>
+                        <div class="grid grid-5col grid_container grid-gap">
+                            <div class="grid_item">Grid item 1</div>
+                            <div class="grid_item">Grid item 2</div>
+                            <div class="grid_item">Grid item 3</div>
+                            <div class="grid_item">Grid item 4</div>
+                            <div class="grid_item">Grid item 5</div>
+                        </div>
+                    </div>
+                    <div class="variant-code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=897.5&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid%2520grid_2col%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2522%253EGrid%2520item%25201%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2522%253EGrid%2520item%25202%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- common layouts ------->
+                <div class="variant_container">
+                    <h2 class="variant-heading heading-sm heading">Common Layouts</h2>
+                    <p class="variant-description">
+                        This example showcases some basic common layouts that can be acheived using grids.
+                        <br>
+                        CSS classes used in the example are:
+                        <br>
+                        - <code class="code class">grid-12layout</code> for 1:2 layout. <br>
+                        - <code class="code class">grid-13layout</code> for 1:3 layout. <br>
+                        - <code class="code class">grid-21layout</code> for 2:1 layout. <br>
+                        - <code class="code class">grid-31layout</code> for 3:1 layout. <br>
+                        This webpage is example of 1:5 layout. the sidebar takes up 1 fraction of the avaible space and the area for component showcase takes 5 fractions of area.
+                    </p>
+                    <div class="variant-example">
+                        <div class="grid grid-12layout grid_container grid-gap spacing-vr">
+                            <div class="grid_item">Grid item 1 - 1fr</div>
+                            <div class="grid_item">Grid item 2 - 2fr</div>
+                        </div>
+                        <div class="grid grid-13layout grid_container grid-gap spacing-vr">
+                            <div class="grid_item">Grid item 1 - 1fr</div>
+                            <div class="grid_item">Grid item 2 - 3fr</div>
+                        </div>
+                        <div class="grid grid-21layout grid_container grid-gap spacing-vr">
+                            <div class="grid_item">Grid item 1 - 2fr</div>
+                            <div class="grid_item">Grid item 2 - 1fr</div>
+                        </div>
+                        <div class="grid grid-31layout grid_container grid-gap">
+                            <div class="grid_item">Grid item 1 - 3fr</div>
+                            <div class="grid_item">Grid item 2 - 1fr</div>
+                        </div>
+                    </div>
+                    <div class="variant-code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=897.5&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid%2520grid-12layout%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2522%253EGrid%2520item%25201%2520-%25201fr%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2522%253EGrid%2520item%25202%2520-%25202fr%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Fdiv%253E"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+
+                        </code>
+                    </div>
+                </div>
+
+                <!------- holygrail layout ------->
+                <div class="variant_container">
+                    <h2 class="variant-heading heading-sm heading">Holy Grail Layout</h2>
+                    <p class="variant-description">
+                        This layout is very commonly used on web. It containes a header at the top, a main content area with fixed-width navigation on the left, content in the middle and a fixed-width sidebar on the right and then a footer.
+                        <br>
+                        Use class <code class="code class">grid_holygrail</code> and then add your content in divs with class <code class="code class">grid_header</code>, <code class="code class">grid_aside</code>, <code class="code class">grid_main</code>, <code class="code class">grid_footer</code>.
+                    </p>
+                    <div class="variant-example">
+                        <div class="grid grid_holygrail grid-gap">
+                            <div class="grid_item grid_header">Header</div>
+                            <div class="grid_item grid_aside">Aside</div>
+                            <div class="grid_item grid_main">Main</div>
+                            <div class="grid_item grid_footer">Footer</div>
+                        </div>
+                    </div>
+                    <div class="variant-code">
+                        <code>
+                            <iframe
+                            class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=897.5&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522grid%2520grid_holygrail%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_header%2522%253EHeader%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_aside%2522%253EAside%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_main%2522%253EMain%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_footer%2522%253EFooter%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Fdiv%253E"
+                                style="height: 217px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
