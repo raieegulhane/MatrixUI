@@ -11,7 +11,8 @@
 }
 
 .component_description {
-    margin: 1rem 0 1.5rem;
+    max-width: 90%;
+    margin: 1rem 0 2rem;
 }
 
 .component_variant-showcase {
@@ -22,6 +23,11 @@
 .variant_container {
     padding: 1rem 0;
     border-bottom: 1px solid var(--secondary-color);
+}
+
+.variant-description {
+    max-width: 90%;
+    margin: 0.5rem 0 1.25rem;
 }
 
 .variant-example, 
@@ -57,6 +63,20 @@
 
 .code_snippet {
     width: 100%;
+}
+
+.code,
+.class {
+    background-color: var(--gray6);
+    color: var(--blue);
+    display: inline-block;
+    padding: 0.2rem;
+    border-radius: 3px;
+    margin: 0 3px;
+}
+
+.class {
+    color: var(--red);
 }
 
 /* spacing */
