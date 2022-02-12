@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/general.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/component-showcase.css">
+    <link rel="stylesheet" href="/components/flex/flex.css">
+    <link rel="stylesheet" href="/components/grids/grids.css">
+    <link rel="stylesheet" href="/components/images/images.css">
+    <link rel="stylesheet" href="/components/text_utilities/text_utilities.css">
+    <link rel="stylesheet" href="/components/cards/cards.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>MatrixUI | Cards</title>
+</head>
+<body>
+
+    <!------------ navbar ------------>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-centered">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/components/overview/overview.html">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ container ------------>
+    <div class="container_components grid">
+        <!----- sidebar ----->
+        <aside class="sidebar flex-col">
+            <h1 class="sidebar_heading heading">Components</h1>
+            <ul class="sidebar_list list-noBullets">
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/badge/badge.html">Badge</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/button/button.html">Button</a></li>
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/cards/cards.html">Cards</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/flex/flex.html">Flex</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/grids/grids.html">Grids</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/images/images.html">Images</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/input/input.html">Input</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/lists/lists.html">List</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/modal/modal.html">Modal</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/rating/rating.html">Rating</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/text_utilities/text_utilities.html">Text Utilities</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/toast/toast.html">Toast</a></li>
+            </ul>
+        </aside>
+    
+        <main class="component">
+            <h1 class="component_heading heading">Cards</h1>
+            <p class="component_description">
+                Can be used to show related data together. For example - card for listing products on ecommerce sites.
+            </p>
+    
+            <div class="component_variant-showcase flex-col">
+                <!------- text only ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Text Only</h2>
+                    <p class="variant_description">
+                        Simple card that contains only text and a button.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-vr">
+                            <h1 class="heading-xs">Text Only Card</h1>
+                            <p class="txt-gray">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper vitae ligula eu ultrices. Curabitur sed odio in nulla gravida egestas.
+                            </p>
+                            <button class="btn btn-primary btn-sq" type="button">Read more</button>  
+                       </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=897.5&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-vr%2522%253E%250A%2520%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EText%2520Only%2520Card%253C%252Fh1%253E%250A%2520%2509%253Cp%2520class%253D%2522txt-gray%2522%253E%250A%2520%2509%2509%253C%21--%2520text%2520--%253E%250A%2520%2509%253C%252Fp%253E%250A%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253ERead%2520more%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Fdiv%253E"
+                                style="height: 241px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- vertical card ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Vertical Card</h2>
+                    <p class="variant_description">
+                        It is like the usual product listing card that we see on ecommerce site, although the usage is not limited to product listing.
+                        <br>
+                        Use class <code class="code class">card-vr</code> on card container.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-vr">
+                            <img class="image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                            <div>
+                                <h1 class="heading-xs">Elon Musk</h1>
+                                <p class="txt-gray">Ashley Vancee</p>
+                            </div>
+                            <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-primary">74% off</span></p>
+                            <div class="card_btn-container">
+                                <button class="btn btn-primary btn-sq" type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>  
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=897.5&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-vr%2522%253E%250A%2520%2509%253Cimg%2520class%253D%2522image-100pr%2522%2520src%253D%2522%252Fpath%252Fto%252Fimage.jpg%2522%253E%250A%2520%2509%253Cdiv%253E%250A%2520%2509%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EElon%2520Musk%253C%252Fh1%253E%250A%2520%2509%2509%253Cp%2520class%253D%2522txt-gray%2522%253EAshley%2520Vancee%253C%252Fp%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%25E2%2582%25B9150%2520%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-gray%2520txt-linethrough%2522%253E%25E2%2582%25B9599%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522txt-primary%2522%253E74%2525%2520off%253C%252Fspan%253E%250A%2520%2520%2520%2509%253C%252Fp%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_btn-container%2522%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509Add%2520to%2520Cart%250A%2520%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%253C%252Fbutton%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 647px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- horizontal card ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Horizontal Card</h2>
+                    <p class="variant_description">
+                        Use class <code class="code class">card-hr</code> on card container.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-hr">
+                            <div class="card_image-container">
+                                <img class="card_image image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                            </div>
+                            <div class="card_content">
+                                <div>
+                                    <h1 class="heading-xs">Elon Musk</h1>
+                                    <p class="txt-gray">Ashley Vancee</p>
+                                    <p>₹150 <span class="text-gray text-linethrough">₹599</span> <span class="text-primary">74% off</span></p>
+                                </div>
+                                <div class="card_btn-container">
+                                    <button class="btn btn-primary btn-sq" type="button">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        Add to Cart
+                                    </button>  
+                                    <button class="btn_icon-nobg" type="button">
+                                        <i class="fa-solid fa-heart card_icon"></i>
+                                    </button>
+                                    <button class="btn_icon-nobg" type="button">
+                                        <i class="fa-solid fa-share-nodes card_icon"></i>
+                                    </button>  
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-hr%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522card_image-container%2522%253E%250A%2520%2509%2509%253Cimg%2520class%253D%2522card_image%2520image-100pr%2522%2520src%253D%2522path%252Fto%252Fimage.jpg%2522%253E%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_content%2522%253E%250A%2520%2509%2509%253Cdiv%253E%250A%2520%2509%2509%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EElon%2520Musk%253C%252Fh1%253E%250A%2520%2509%2509%2509%253Cp%2520class%253D%2522txt-gray%2522%253EAshley%2520Vancee%253C%252Fp%253E%250A%2520%2509%2509%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9150%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-gray%2520text-linethrough%2522%253E%25E2%2582%25B9599%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2522%253E74%2525%2520off%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%2509%253Cdiv%2520class%253D%2522card_btn-container%2522%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%2509Add%2520to%2520Cart%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fbutton%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 719px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- With Badge ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">With Badge</h2>
+                    <p class="variant_description">
+                        Add badge component to code for normal card and apply class <code class="code class">card_badge</code> to it. Position of the badge can also be changed using this class.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-vr">
+                            <div class="badge card-badge">New</div>
+                            <img class="image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                            <div>
+                                <h1 class="heading-xs">Elon Musk</h1>
+                                <p class="txt-gray">Ashley Vancee</p>
+                            </div>
+                            <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-primary">74% off</span></p>
+                            <div class="card_btn-container">
+                                <button class="btn btn-primary btn-sq" type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>  
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-hr%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520card-badge%2522%253ENew%253C%252Fdiv%253E%2520%253C%21--%2520badge%2520component%2520--%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_image-container%2522%253E%250A%2520%2509%2509%253Cimg%2520class%253D%2522card_image%2520image-100pr%2522%2520src%253D%2522path%252Fto%252Fimage.jpg%2522%253E%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_content%2522%253E%250A%2520%2509%2509%253Cdiv%253E%250A%2520%2509%2509%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EElon%2520Musk%253C%252Fh1%253E%250A%2520%2509%2509%2509%253Cp%2520class%253D%2522txt-gray%2522%253EAshley%2520Vancee%253C%252Fp%253E%250A%2520%2509%2509%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9150%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-gray%2520text-linethrough%2522%253E%25E2%2582%25B9599%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2522%253E74%2525%2520off%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%2509%253Cdiv%2520class%253D%2522card_btn-container%2522%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%2509Add%2520to%2520Cart%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fbutton%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 743px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- With Dismiss ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">With Dismiss</h2>
+                    <p class="variant_description">
+                        This card can be dismissed by clicking on the button. 
+                        <br>
+                        Similar to card with badge, an dismiss icon can be added to the code for normal card.
+                        <br>
+                        Apply <code class="code class">card_dismiss</code> to the dismiss icon. Position of the dismiss icon can be changed using this class.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-vr">
+                            <i class="fa-solid fa-xmark card_dismiss"></i>                            
+                            <img class="image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                            <div>
+                                <h1 class="heading-xs">Elon Musk</h1>
+                                <p class="txt-gray">Ashley Vancee</p>
+                            </div>
+                            <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-primary">74% off</span></p>
+                            <div class="card_btn-container">
+                                <button class="btn btn-primary btn-sq" type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>  
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-hr%2522%253E%250A%2520%2509%253Ci%2520class%253D%2522fa-solid%2520fa-xmark%2520card_dismiss%2522%253E%253C%252Fi%253E%2520%253C%21--%2520dismiss%2520icon%2520--%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522card_image-container%2522%253E%250A%2520%2509%2509%253Cimg%2520class%253D%2522card_image%2520image-100pr%2522%2520src%253D%2522path%252Fto%252Fimage.jpg%2522%253E%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_content%2522%253E%250A%2520%2509%2509%253Cdiv%253E%250A%2520%2509%2509%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EElon%2520Musk%253C%252Fh1%253E%250A%2520%2509%2509%2509%253Cp%2520class%253D%2522txt-gray%2522%253EAshley%2520Vancee%253C%252Fp%253E%250A%2520%2509%2509%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9150%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-gray%2520text-linethrough%2522%253E%25E2%2582%25B9599%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2522%253E74%2525%2520off%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%2509%253Cdiv%2520class%253D%2522card_btn-container%2522%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%2509Add%2520to%2520Cart%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fbutton%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="width: 899px; height: 743px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- With Text Overlay ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">With Text Overlay</h2>
+                    <p class="variant_description">
+                        Text or image is placed on top of the contents of the card. Any text, image, icon, container etc. with class <code class="code class">card_overlay</code> will act as overlay on the card.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_container card-vr">
+                            <div class="card_overlay">
+                                <h1 class="heading-sm">Out Of Stock</h1>
+                            </div>
+                            <img class="image-100pr" src="https://m.media-amazon.com/images/I/5179mrE+WWL.jpg">
+                            <div>
+                                <h1 class="heading-xs">Elon Musk</h1>
+                                <p class="txt-gray">Ashley Vancee</p>
+                            </div>
+                            <p>₹150 <span class="txt-gray txt-linethrough">₹599</span> <span class="txt-primary">74% off</span></p>
+                            <div class="card_btn-container">
+                                <button class="btn btn-primary btn-sq" type="button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </button>  
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-heart card_icon"></i>
+                                </button>
+                                <button class="btn_icon-nobg" type="button">
+                                    <i class="fa-solid fa-share-nodes card_icon"></i>
+                                </button>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_container%2520card-hr%2522%253E%250A%2520%2509%253C%21--%2520Overlay%2520text%2520container%2520--%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_overlay%2522%253E%250A%2520%2509%2509%253Ch1%2520class%253D%2522heading-sm%2522%253EOut%2520Of%2520Stock%253C%252Fh1%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_image-container%2522%253E%250A%2520%2509%2509%253Cimg%2520class%253D%2522card_image%2520image-100pr%2522%2520src%253D%2522path%252Fto%252Fimage.jpg%2522%253E%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%2509%253Cdiv%2520class%253D%2522card_content%2522%253E%250A%2520%2509%2509%253Cdiv%253E%250A%2520%2509%2509%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EElon%2520Musk%253C%252Fh1%253E%250A%2520%2509%2509%2509%253Cp%2520class%253D%2522txt-gray%2522%253EAshley%2520Vancee%253C%252Fp%253E%250A%2520%2509%2509%2509%253Cp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%25E2%2582%25B9150%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-gray%2520text-linethrough%2522%253E%25E2%2582%25B9599%253C%252Fspan%253E%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text-primary%2522%253E74%2525%2520off%253C%252Fspan%253E%253C%252Fp%253E%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%2509%253Cdiv%2520class%253D%2522card_btn-container%2522%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%2509Add%2520to%2520Cart%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2509%253C%252Fbutton%253E%250A%2520%2509%2509%2509%253Cbutton%2520class%253D%2522btn_icon-nobg%2522%2520type%253D%2522button%2522%253E%250A%2520%2509%2509%2509%2509%253Ci%2520class%253D%2522fa-solid%2520fa-share-nodes%2520card_icon%2522%253E%253C%252Fi%253E%250A%2520%2509%2509%2509%253C%252Fbutton%253E%2520%2520%250A%2520%2509%2509%253C%252Fdiv%253E%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 815px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- With Shadow ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">With Shadow</h2>
+                    <p class="variant_description">
+                        Shadows can give the card a popped up look.
+                        <br>
+                        Add class <code class="code class">card_shadow</code> to any card container to get the effect.
+                    </p>
+                    <div class="variant_example">
+                        <div class="card_shadow card_container card-vr">
+                            <h1 class="heading-xs">Text Only Card</h1>
+                            <p class="txt-gray">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed semper vitae ligula eu ultrices. Curabitur sed odio in nulla gravida egestas.
+                            </p>
+                            <button class="btn btn-primary btn-sq" type="button">Read more</button>  
+                       </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522card_shadow%2520card_container%2520card-vr%2522%253E%250A%2520%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EText%2520Only%2520Card%253C%252Fh1%253E%250A%2520%2509%253Cp%253E%2520%253C%21--%2520some%2520text%2520--%253E%2520%253C%252Fp%253E%250A%2520%2509%253Cbutton%2520class%253D%2522btn%2520btn-primary%2520btn-sq%2522%2520type%253D%2522button%2522%253ERead%2520more%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Fdiv%253E"
+                                style="height: 193px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
