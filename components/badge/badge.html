@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/general.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/component-showcase.css">
+    <link rel="stylesheet" href="/components/flex/flex.css">
+    <link rel="stylesheet" href="/components/grids/grids.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
+    <link rel="stylesheet" href="/components/badge/badge.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>MatrixUI | Badge</title>
+</head>
+<body>
+
+    <!------------ navbar ------------>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-centered">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/components/overview/overview.html">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ container ------------>
+    <div class="container_components grid">
+        <!----- sidebar ----->
+        <aside class="sidebar flex-col">
+            <h1 class="sidebar_heading heading">Components</h1>
+            <ul class="sidebar_list list-noBullets">
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/badge/badge.html">Badge</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/button/button.html">Button</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/cards/cards.html">Cards</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/flex/flex.html">Flex</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/grids/grids.html">Grids</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/images/images.html">Images</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/input/input.html">Input</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/lists/lists.html">List</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/modal/modal.html">Modal</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/rating/rating.html">Rating</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/text_utilities/text_utilities.html">Text Utilities</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/toast/toast.html">Toast</a></li>
+            </ul>
+        </aside>
+
+        <!----- to the top button ----->
+        <a href="#" class="btn btn-rd btn-icon btn-floating btn_floating-style link-noDecoration" type="button">
+            <i class="fa-solid fa-arrow-up"></i>    
+        </a>
+
+        <!----- component display ----->
+        <main class="component">
+            <h1 class="component_heading heading">Badge</h1>
+            <p class="component_description">
+                Used to highlight the status of any item for quick recognization. It can also display message.
+            </p>
+    
+            <div class="component_variant-showcase flex-col">
+                <!--- default --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Default</h2>
+                    <p class="variant_description">
+                        Simple badge that can be edited as per need.
+                        <br>
+                        In the following example badge is shown on button, but it can be used with any item.
+                        <br>
+                        Add a badge container and apply class <code class="code class">badge</code>
+                    </p>
+
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-default">
+                            New Message
+                            <div class="badge"></div>
+                        </button>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E%2520%2520%2520"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- badge with content --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Badge With Content</h2>
+                    <p class="variant_description">
+                        Can be used to display count or small message.
+                        <br>
+                        By default badge is round/oval in shape. Apply class <code class="code class">badge-sq</code> for squared corners and class <code class="code class">badge-cr</code> for rounded ends.
+                    </p>
+
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-default spacing-hr">
+                            New Message
+                            <div class="badge">99+</div>
+                        </button>
+                        <button class="btn btn-sq btn-default spacing-hr">
+                            New Message
+                            <div class="badge badge-cr">99+</div>
+                        </button>
+                        <button class="btn btn-sq btn-default">
+                            New Message
+                            <div class="badge badge-sq">New</div>
+                        </button>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253C%21--%2520Round%2520badge%2520--%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2522%253E99%252B%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E%250A%250A%2520%253C%21--%2520Badge%2520with%2520curved%2520ends%2520--%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge-cr%2522%253E99%252B%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E%250A%2520%250A%2520%253C%21--%2520Badge%2520with%2520squared%2520corners%2520--%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge-sq%2522%253ENew%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E"
+                                style="height: 480px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- Badge on text --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Badge On Text</h2>
+                    <p class="variant_description">
+                        Badge is placed on the corner of text or heading.
+                        <br>
+                        Both the text and badge must be placed inside the same container that has property <code class="code">position: relative</code>.
+                    </p>
+
+                    <div class="variant_example">
+                        <div class="badge_container">
+                            <h1 class="heading-sm spacing-vr">Example of heading with badge</h1>
+                            <div class="badge badge-sq">New</div>
+                        </div>
+                        <div class="badge_container">
+                            <p>Example of paragraph with badge</p>
+                            <div class="badge"></div>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2509%253Ch1%2520class%253D%2522heading-sm%2522%253EExample%2520of%2520heading%2520with%2520badge%253C%252Fh1%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge-sq%2522%253ENew%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- icons with badge --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Icons With Badge</h2>
+                    <p class="variant_description">
+                        Usage is same as above. The icon and badge should be in same container that has <code class="code">position: relative</code>
+                    </p>
+
+                    <div class="variant_example flex-row">
+                        <div class="badge_container spacing-hr">
+                            <i class="fa-solid fa-bell icon"></i>
+                            <div class="badge badge-cr"></div>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <i class="fa-solid fa-cart-shopping icon"></i>
+                            <div class="badge badge-cr">3</div>
+                        </div>
+                        <div class="badge_container">
+                            <i class="fa-solid fa-comments icon"></i>
+                            <div class="badge badge-sq">New</div>
+                        </div>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2509%253Ci%2520class%253D%2522fa-solid%2520fa-bell%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge-cr%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- status badge --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Status Badge</h2>
+                    <p class="variant_description">
+                        Status badges are used often with avatar to show the status of user. For example - when user is online, the status badge will be green.
+                        <br>
+                        The avatar image/text and badge should be in same container that has <code class="code">position: relative</code>
+                        <br>
+                        Apply class <code class="code class">badge_status</code>.
+                        <br>
+                        Additionally for circular avatars use class:
+                        <br>
+                        - <code class="code class">.badge_status-cr-sm</code>: for small avatar (<code class="code class">avatar-sm</code>) <br>
+                        - <code class="code class">.badge_status-cr-md</code>: for medium avatar (<code class="code class">avatar-sm</code>) <br>
+                        - <code class="code class">.badge_status-cr-lg</code>: for large avatar (<code class="code class">avatar-sm</code>) <br>
+                        For square avatar use class <code class="code class">badge_status-sq</code>
+                        <br>
+                    </p>
+
+                    <div class="variant_example">
+                        <div class="flex-row flex_align-bottom">
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-circle avatar-lg avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-cr-lg badge-green"></div>
+                            </div>
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-circle avatar-md avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-cr-md badge-yellow"></div>
+                            </div>
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-circle avatar-sm avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-cr-sm"></div>
+                            </div>
+                        </div>
+                        <div class="flex-row flex_align-bottom">
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-square avatar-lg avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-sq badge-green"></div>
+                            </div>
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-square avatar-md avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-sq badge-yellow"></div>
+                            </div>
+                            <div class="badge_container spacing-hr">
+                                <img class="avatar-square avatar-sm avatar-border" src="/images/avatar1.jpg" alt="@girl">
+                                <div class="badge badge_status badge_status-sq"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253C%21-----%2520circular%2520badge%2520-----%253E%250A%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%2520%253C%21--%2520large%2520avatar%2520--%253E%250A%2520%2509%253Cimg%2520class%253D%2522avatar-circle%2520avatar-lg%2520avatar-border%2522%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2540girl%2522%253E%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge_status%2520badge_status-cr-lg%2520badge-green%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%2520%253C%21--%2520medium%2520avatar%2520--%253E%250A%2520%2509%253Cimg%2520class%253D%2522avatar-circle%2520avatar-md%2520avatar-border%2522%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2540girl%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge_status%2520badge_status-cr-md%2520badge-yellow%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%2520%253C%21--%2520small%2520avatar%2520--%253E%250A%2520%2509%253Cimg%2520class%253D%2522avatar-circle%2520avatar-sm%2520avatar-border%2522%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2540girl%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge_status%2520badge_status-cr-sm%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%250A%250A%2520%253C%21-----%2520square%2520badge%2520-----%253E%250A%2520%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2520%2509%253Cimg%2520class%253D%2522avatar-square%2520avatar-lg%2520avatar-border%2522%2520src%253D%2522%252Fimages%252Favatar1.jpg%2522%2520alt%253D%2522%2540girl%2522%253E%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2520badge_status%2520badge_status-sq%2520badge-green%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E"
+                                style="height: 576px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- colorful indicators --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Colorful Indicators</h2>
+                    <p class="variant_description">
+                        By default the badge is red. Add following classes to change colors. 
+                        <br>
+                        <code class="code class">badge-orange</code>, 
+                        <code class="code class">badge-yellow</code>,
+                        <code class="code class">badge-green</code>,
+                        <code class="code class">badge-cyan</code>,
+                        <code class="code class">badge-blue</code>,
+                        <code class="code class">badge-voilet</code> and 
+                        <code class="code class">badge-gray</code>. <br>
+                        Alternately badge color can be changed through inline styling or changing color property in <code class="code class">badge</code> class.
+                    </p>
+
+                    <div class="variant_example flex-row">
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Red
+                                <div class="badge"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Orange
+                                <div class="badge badge-orange"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Yellow
+                                <div class="badge badge-yellow"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Green
+                                <div class="badge badge-green"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Cyan
+                                <div class="badge badge-cyan"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Blue
+                                <div class="badge badge-blue"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Voilet
+                                <div class="badge badge-voilet"></div>
+                            </p>
+                        </div>
+                        <div class="badge_container spacing-hr">
+                            <p>
+                                Grey
+                                <div class="badge badge-grey"></div>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E%2520%2520%2520"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- default --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Default</h2>
+                    <p class="variant_description">
+                        Simple badge that can be edited as per need.
+                        <br>
+                        In the following example badge is shown on button, but it can be used with any item.
+                        <br>
+                        Add a badge container and apply class <code class="code class">badge</code>
+                    </p>
+
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-default">
+                            New Message
+                            <div class="badge"></div>
+                        </button>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509New%2520Message%250A%2520%2509%253Cdiv%2520class%253D%2522badge%2522%253E%253C%252Fdiv%253E%250A%2520%253C%252Fbutton%253E%2520%2520%2520"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
