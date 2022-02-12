@@ -1,0 +1,138 @@
+.btn {
+    position: relative;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+}
+
+.btn-sq {
+    border-radius: var(--br-sq);
+}
+
+.btn-cr {
+    border-radius: var(--br-cr);
+}
+
+.btn-rd {
+    border-radius: var(--br-rd);
+}
+
+.btn-default {
+    background-color: var(--gray4);
+    border: 2px solid var(--gray4);
+}
+
+.btn-default:hover {
+    background-color: var(--gray5);
+    border-color: var(--gray5);
+}
+
+.btn-primary, 
+.btn-outline {
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--black);
+}
+
+.btn-outline {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue2);
+    border-color: var(--blue2);
+    transition: 0.5s ease;
+}
+
+.btn-outline:hover {
+    color: var(--blue2);
+    border-color: var(--blue2);
+    transition: 0.5s ease;
+}
+
+.btn-link,
+.btn-subtle {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-link {
+    color: var(--primary-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-link:hover {
+    color: var(--blue2);
+    text-decoration: underline;
+}
+
+.btn-subtle {
+    color: var(--gray1);
+    border: 2px solid var(--secondary-color);
+}
+
+.btn-subtle:hover {
+    background-color: var(--gray5);
+    border: 2px solid var(--gray5);
+    color: var(--white);
+}
+
+.btn-wtIcon {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    height: fit-content;
+}
+
+.btn-icon {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+
+.btn-icon:hover {
+    background-color: var(--gray4);
+    color: var(--primary-color);
+    transition: 0.5s ease;
+}
+
+.btn_floating-style {
+    background-color: var(--primary-color);
+    color: var(--black);
+    font-size: 1.25rem;
+}
+
+.btn_floating-style:hover {
+    background-color: var(--blue2);
+    color: var(--black);
+}
+
+.btn-floating {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 7;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-disabled {
+    opacity: 70%;
+    pointer-events: none;
+}
