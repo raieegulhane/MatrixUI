@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/general.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/component-showcase.css">
+    <link rel="stylesheet" href="/components/flex/flex.css">
+    <link rel="stylesheet" href="/components/grids/grids.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>MatrixUI | Button</title>
+</head>
+<body>
+
+    <!------------ navbar ------------>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-centered">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/components/overview/overview.html">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ container ------------>
+    <div class="container_components grid">
+        <!----- sidebar ----->
+        <aside class="sidebar flex-col">
+            <h1 class="sidebar_heading heading">Components</h1>
+            <ul class="sidebar_list list-noBullets">
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/badge/badge.html">Badge</a></li>
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/button/button.html">Button</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/cards/cards.html">Cards</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/flex/flex.html">Flex</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/grids/grids.html">Grids</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/images/images.html">Images</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/input/input.html">Input</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/lists/lists.html">List</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/modal/modal.html">Modal</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/rating/rating.html">Rating</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/text_utilities/text_utilities.html">Text Utilities</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/toast/toast.html">Toast</a></li>
+            </ul>
+        </aside>
+    
+        <main class="component">
+            <h1 class="component_heading heading">Button</h1>
+            <p class="component_description">
+                An important way of providing call to action. Buttons can have various styles and states.
+                <br>
+                Usually <code class="code">&lt;a&gt;</code> tag or <code class="code">&lt;button&gt;</code> tags are used to create buttons.
+                <br>
+                Use class <code class="code class">btn</code>.
+            </p>
+    
+            <div class="component_variant-showcase flex-col">
+                <!------- default ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Default</h2>
+                    <p class="variant_description">
+                        Any other kind of button can be created from this.
+                        <br>
+                        Following example includes the use of <code class="code">&lt;button&gt;</code> tag and <code class="code">&lt;a&gt;</code> tag for creating button.
+                        <br>
+                        Use class <code class="code class">btn-default</code>. Additionaly <code class="code class">btn-sq</code> and <code class="code class">btn-cr</code> can be used to obtain button having curved square corners and rounded ends respectively.
+                        <br> 
+                        Use class <code class="code class">link-noDecoration</code> in addition to other required classes when using <code class="code">&lt;a&gt;</code> to create button.
+                    </p>
+
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-default spacing-hr" type="button">Default Button</button>
+                        <a href="#" class="btn btn-cr btn-default link-noDecoration" type="button">Default Button</a>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2522%2520type%253D%2522button%2522%253EDefault%2520Button%253C%252Fbutton%253E%250A%2520%253Ca%2520href%253D%2522%2523%2522%2520class%253D%2522btn%2520btn-cr%2520btn-default%2520link-noDecoration%2522%2520type%253D%2522button%2522%253EDefault%2520Button%253C%252Fa%253E%2520%2520%2520%2520%2520"
+                                style="height: 121px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- types ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Types</h2>
+                    <p class="variant_description">
+                        Different ways of styling a button. Often style of button is also used to show significance of the button.
+                        <br>
+                        Classes used: 
+                        <br>
+                        <code class="code class">btn-primmary</code>: Primary button -- Most important button. <br>
+                        <code class="code class">btn-outline</code>: Outlined button -- Secondary importance. <br>
+                        <code class="code class">btn-subtle</code>: Subtle button -- Not extreamly visible. <br>
+                        <code class="code class">btn-link</code>: Link Button
+
+                    </p>
+
+                    <div class="variant_example">
+                        <div class="spacing-vr">
+                            <button class="btn btn-sq btn-primary spacing-hr" type="button">Primary Button</button>
+                            <button class="btn btn-sq btn-outline spacing-hr" type="button">Outline Button</button>
+                            <button class="btn btn-sq btn-subtle spacing-hr" type="button">Subtle Button</button>
+                            <button class="btn btn-link" type="button">Link Button</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-cr btn-primary spacing-hr" type="button">Primary Button</button>
+                            <button class="btn btn-cr btn-outline spacing-hr" type="button">Outline Button</button>
+                            <button class="btn btn-cr btn-sq btn-subtle spacing-hr" type="button">Subtle Button</button>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-primary%2522%2520type%253D%2522button%2522%253EPrimary%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-outline%2522%2520type%253D%2522button%2522%253EOutline%2520Button%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-subtle%2522%2520type%253D%2522button%2522%253ESubtle%2520Button%253C%252Fbutton%253E%250A%2520%253Cbutton%2520class%253D%2522btn%2520btn-link%2522%2520type%253D%2522button%2522%253ELink%2520Button%253C%252Fbutton%253E"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- button with icon ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Button With Icon</h2>
+                    <p class="variant_description">
+                        Has icon along with text. Add class <code class="code class">btn-wtIcon</code> to button with any other style.
+                    </p>
+
+                    <div class="variant_example flex-row">
+                        <button class="btn btn-sq btn-primary btn-wtIcon spacing-hr" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Primary Button
+                        </button>
+                        <button class="btn btn-sq btn-outline btn-wtIcon spacing-hr" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Outline Button
+                        </button>
+                        <button class="btn btn-sq btn-subtle btn-wtIcon spacing-hr" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Subtle Button
+                        </button>
+                        <button class="btn btn-link btn-wtIcon" type="button">
+                            <i class="fa-solid fa-heart"></i>
+                            Link Button
+                        </button>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-primary%2520btn-wtIcon%2522%2520type%253D%2522button%2522%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253Ci%2520class%253D%2522fa-solid%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2509Primary%2520Button%250A%2520%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="height: 169px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- Icon Button ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Icon button</h2>
+                    <p class="variant_description">
+                        Icons act as buttons.
+                        <br>
+                        Use class <code class="code class">btn-icon</code>.
+                    </p>
+
+                    <div class="variant_example flex-row">
+                        <button class="btn-icon btn-rd spacing-hr">
+                            <i class="fa-solid fa-heart"></i>
+                        </button>
+                        <button class="btn-icon btn-sq">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn-icon%2520btn-sq%2522%253E%250A%2520%2509%253Ci%2520class%253D%2522fa-solid%2520fa-cart-shopping%2522%253E%253C%252Fi%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%253C%252Fbutton%253E%2520%2520%2520"
+                                style="height: 145px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- floating action ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Floating action</h2>
+                    <p class="variant_description">
+                        It is removed from the flow of document and is suspended at a particular region of the webpage.
+                        <br>
+                        Use class <code class="code class">btn-floating</code>. Styling and position of this button can be changed using this class.
+                        <br>
+                        The 'back to top' button on botto-left corner of the webpage is an example  of floating action button.
+                    </p>
+                    <div class="variant_example">
+                        <a class="btn btn-rd btn-icon btn_floating-style" type="button">
+                            <i class="fa-solid fa-arrow-up"></i>    
+                        </a>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Ca%2520class%253D%2522btn%2520btn-floating%2520btn-cr%2520btn-primary%2522%2520href%253D%2522%2523%2522%253E%2520Floating%2520action%2520button%2520%253C%252Fa%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="height: 121px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- block ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Block</h2>
+                    <p class="variant_description">
+                        Takes up 100% of width of parent container.
+                        <br>
+                        Use class <code class="code class">btn-block</code> along with other necessary classes.
+                    </p>
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-default btn-block spacing-vr" type="button">Default Button - Block</button>
+                        <button class="btn btn-sq btn-primary btn-block spacing-vr" type="button">Primary Button - Block</button>
+                        <button class="btn btn-cr btn-outline btn-block" type="button">Outline Button - Block</button>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-default%2520btn-block%2522%2520type%253D%2522button%2522%253EDefault%2520Button%2520-%2520Block%253C%252Fbutton%253E%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="height: 121px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!------- disabled ------->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Disabled</h2>
+                    <p class="variant_description">
+                        Used when no button click is intentended.
+                        <br>
+                        Use class <code class="code class">btn-disabled</code> along with other necessary classes.
+                    </p>
+                    <div class="variant_example">
+                        <button class="btn btn-sq btn-primary btn-disabled spacing-hr" type="button">Primary Button</button>
+                        <button class="btn btn-sq btn-outline btn-disabled spacing-hr" type="button">Outline Button</button>
+                        <button class="btn btn-sq btn-subtle btn-disabled spacing-hr" type="button">Subtle Button</button>
+                        <button class="btn btn-link btn-disabled" type="button">Link Button</button>
+                    </div>
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cbutton%2520class%253D%2522btn%2520btn-sq%2520btn-primary%2520btn-disabled%2522%2520type%253D%2522button%2522%253EPrimary%2520Button%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                                style="height: 97px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
