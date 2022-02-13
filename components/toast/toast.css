@@ -9,6 +9,19 @@
     box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
+.toast_cta {
+    background-color: inherit;
+    color: var(--primary-color);
+    font-size: 1.05rem;
+    border: none;
+    cursor: pointer;
+}
+
+.toast_cta:hover {
+    color: var(--blue2);
+    transition: 0.5s ease;
+}
+
 .toast-default {
     background-color: var(--gray4);
 }
