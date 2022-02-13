@@ -1,0 +1,34 @@
+.alert {
+    background-color: var(--gray4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: var(--br-sq);
+}
+
+.icon-close {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.icon-close:hover {
+    font-size: 1.1rem;
+}
+
+.alert-info {
+    background-color: var(--blue);
+}
+
+.alert-success {
+    background-color: var(--green);
+}
+
+.alert-warning {
+    background-color: var(--orange);
+}
+
+.alert-error {
+    background-color: var(--red);
+}
