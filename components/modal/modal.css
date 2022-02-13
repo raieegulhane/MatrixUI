@@ -1,0 +1,44 @@
+.modal_container {
+    background-color: var(--gray6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 450px;
+    padding: 2rem;
+    border: 2px solid var(--gray4);
+    border-radius: 0.5rem;
+}
+
+.modal_btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.modal_btn {
+    font-size: 0.8rem;
+}
+
+.modal_content-scroll {
+    height: 150px;
+    padding-right: 0.5rem;
+    overflow-y: scroll;
+}
+
+.modal_content-scroll::-webkit-scrollbar {
+    background-color: var(--gray6);
+    width: 7px;
+    border-radius: 7px;
+}
+
+.modal_content-scroll::-webkit-scrollbar-thumb {
+    background-color: var(--gray1);
+    border-radius: 7px;
+}
+
+.modal_content-scroll::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 7px;
+}
