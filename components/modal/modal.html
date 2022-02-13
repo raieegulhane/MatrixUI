@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/assets/navbar.css">
+    <link rel="stylesheet" href="/assets/general.css">
+    <link rel="stylesheet" href="/assets/sidebar.css">
+    <link rel="stylesheet" href="/assets/component-showcase.css">
+    <link rel="stylesheet" href="/components/flex/flex.css">
+    <link rel="stylesheet" href="/components/grids/grids.css">
+    <link rel="stylesheet" href="/components/text_utilities/text_utilities.css">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="stylesheet" href="/components/modal/modal.css">
+
+    <script src="https://kit.fontawesome.com/10a3e21499.js" crossorigin="anonymous"></script>
+
+    <title>MatrixUI | Modal</title>
+</head>
+<body>
+
+    <!------------ navbar ------------>
+    <header class="navbar_container">
+        <nav class="navbar flex flex-row flex-centered">
+            <a class="link-noDecoration" href="/index.html">
+                <img class="navbar_logo" src="/images/logo_MatrixUI-blue.svg" alt="MatrixUI Logo">
+            </a>
+            <ul class="navbar_list flex-row list-noStyle">
+                <li><a class="navbar_pill link-noDecoration" href="/index.html">Home</a></li>
+                <li><a class="navbar_pill link-noDecoration navbar_pill-selected" href="/components/overview/overview.html">Components</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#">Installation</a></li>
+                <li><a class="navbar_pill link-noDecoration" href="#" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!------------ container ------------>
+    <div class="container_components grid">
+        <!----- sidebar ----->
+        <aside class="sidebar flex-col">
+            <h1 class="sidebar_heading heading">Components</h1>
+            <ul class="sidebar_list list-noBullets">
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/overview/overview.html">Overview</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/alert/alert.html">Alert</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/avatar/avatar.html">Avatar</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/badge/badge.html">Badge</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/button/button.html">Button</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/cards/cards.html">Cards</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/flex/flex.html">Flex</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/grids/grids.html">Grids</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/images/images.html">Images</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/input/input.html">Input</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/lists/lists.html">List</a></li>
+                <li class="sidebar_item sidebar_item-selected"><a class="link-noDecoration" href="/components/modal/modal.html">Modal</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/rating/rating.html">Rating</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/text_utilities/text_utilities.html">Text Utilities</a></li>
+                <li class="sidebar_item"><a class="link-noDecoration" href="/components/toast/toast.html">Toast</a></li>
+            </ul>
+        </aside>
+
+        <!----- to the top button ----->
+        <a href="#" class="btn btn-rd btn-icon btn-floating btn_floating-style link-noDecoration" type="button">
+            <i class="fa-solid fa-arrow-up"></i>    
+        </a>
+
+        <!----- component display ----->
+        <main class="component">
+            <h1 class="component_heading heading">Modal</h1>
+            <p class="component_description">
+                A modal provides space, which is removed from normal flow of webpage, for message prompts, acknowledgement messages, and submissions.
+            </p>
+    
+            <div class="component_variant-showcase flex-col">
+                <!--- default --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Text Overflow</h2>
+                    <p class="variant_description">
+                        Imparts scroll behaviour to the long text.
+                    </p>
+
+                    <div class="variant_example">
+                        <div class="modal_container">
+                            <h1 class="heading-xs">Modal Title</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam odio arcu, tristique ac mollis eget, auctor vel nulla. Integer pharetra hendrerit mi, quis interdum nibh consectetur vitae.
+                            </p>
+                            <div class="modal_btn-container">
+                                <button class="modal_btn btn btn-sq btn-primary">Accept</button>
+                                <button class="modal_btn btn btn-sq btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal_container%2522%253E%250A%2520%2509%253C%21--%2520content%2520--%253E%2520%2520%250A%2520%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2509%253Cp%253E%250A%2520%2509%2509%253C%21--%2520some%2520message%2520--%253E%250A%2520%2509%253C%252Fp%253E%250A%2520%2509%253Cdiv%2520class%253D%2522modal_btn-container%2522%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522modal_btn%2520btn%2520btn-sq%2520btn-primary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522modal_btn%2520btn%2520btn-sq%2520btn-default%2522%253ECancel%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520"
+                                style="height: 336px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+
+                <!--- overflow --->
+                <div class="variant_container">
+                    <h2 class="variant_heading heading">Overflow</h2>
+                    <p class="variant_description">
+                        Imparts scroll behaviour to longer content.
+                        <br>
+                        Use class <code class="code class">modal_content-scroll</code> for the content.
+                    </p>
+
+                    <div class="variant_example">
+                        <div class="modal_container">
+                            <h1 class="heading-sm">Modal Title</h1>
+                            <p class="modal_content-scroll">
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam odio arcu, tristique ac mollis eget, auctor vel nulla. Integer pharetra hendrerit mi, quis interdum nibh consectetur vitae.
+                                Aenean vitae libero tristique, feugiat turpis quis, ornare mauris. Sed sit amet felis nunc. Donec vel neque vitae nulla condimentum elementum non a lectus. Nam at lorem vel dolor maximus eleifend ut vel augue. Praesent sollicitudin consequat elementum. Morbi sit amet risus ex.
+                                Mauris ultrices condimentum urna. Aliquam sit amet lectus eu eros egestas venenatis. Phasellus pellentesque tincidunt eros.
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Etiam odio arcu, tristique ac mollis eget, auctor vel nulla. Integer pharetra hendrerit mi, quis interdum nibh consectetur vitae.
+                                Aenean vitae libero tristique, feugiat turpis quis, ornare mauris. Sed sit amet felis nunc. Donec vel neque vitae nulla condimentum elementum non a lectus. Nam at lorem vel dolor maximus eleifend ut vel augue. Praesent sollicitudin consequat elementum. Morbi sit amet risus ex.
+                                Mauris ultrices condimentum urna. Aliquam sit amet lectus eu eros egestas venenatis. Phasellus pellentesque tincidunt eros.
+                            </p>
+                            <div class="modal_btn-container">
+                                <button class="modal_btn btn btn-sq btn-primary">Accept</button>
+                                <button class="modal_btn btn btn-sq btn-default">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="variant_code">
+                        <code>
+                            <iframe
+                                class="code_snippet"
+                                src="https://carbon.now.sh/embed?bg=rgba%2840%2C44%2C52%2C1%29&t=one-dark&wt=none&l=htmlmixed&width=687&ds=false&dsyoff=34px&dsblur=37px&wc=true&wa=true&pv=8px&ph=7px&ln=true&fl=1&fm=Hack&fs=14px&lh=171%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522modal_container%2522%253E%250A%2520%2509%253C%21--%2520content%2520--%253E%2520%2520%250A%2520%2509%253Ch1%2520class%253D%2522heading-xs%2522%253EModal%2520Title%253C%252Fh1%253E%250A%2520%2509%253Cp%2520class%253D%2522modal_content-scroll%2522%253E%250A%2520%2509%2509%253C%21--%2520long%2520content%2520--%253E%250A%2520%2509%253C%252Fp%253E%250A%2520%2509%253Cdiv%2520class%253D%2522modal_btn-container%2522%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522modal_btn%2520btn%2520btn-sq%2520btn-primary%2522%253EAccept%253C%252Fbutton%253E%250A%2520%2509%2509%253Cbutton%2520class%253D%2522modal_btn%2520btn%2520btn-sq%2520btn-default%2522%253ECancel%253C%252Fbutton%253E%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2509%253C%252Fdiv%253E%250A%2520%253C%252Fdiv%253E%2520%2520%2520%2520%2520%2520"
+                                style="height: 336px; border:0; transform: scale(1); overflow:hidden;"
+                                sandbox="allow-scripts allow-same-origin">
+                            </iframe>
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
