@@ -1,0 +1,95 @@
+.list-noBullets {
+    list-style: none;
+}
+
+.list-item {
+    background-color: var(--black);
+    text-align: center;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: var(--gray6);
+    transition: 0.3s ease;
+}
+
+
+.list_container {
+    background-color: var(--gray5);
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.list-ul,
+.list-ol {
+    margin-left: 1.5rem;
+}
+
+.list_ul-ds {
+    list-style: disc;
+}
+
+.list_ul-sq {
+    list-style: square;
+}
+
+.list_ul-cr {
+    list-style: circle;
+}
+
+.list_ol-ua {
+    list-style: upper-alpha;
+}
+
+.list_ol-ur {
+    list-style: upper-roman;
+}
+
+.list_ol-la {
+    list-style: lower-alpha;
+}
+
+.list_ol-lr {
+    list-style: lower-roman;
+}
+
+.list-inline {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+
+/* notifications for stacked list */
+.list_notif {
+    background-color: var(--gray5);
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    padding: 0.5rem 1rem;
+    border-radius: var(--br-sq);
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.list_notif:hover {
+    background-color: var(--gray6);
+}
+
+.notif_content {
+    gap: 10px;
+}
+
+.notif_btn {
+    gap: 25px;
+}
+
+.notif_btn > button {
+    background-color: transparent;
+}
