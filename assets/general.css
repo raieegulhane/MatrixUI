@@ -16,13 +16,6 @@
     display: inline;
 }
 
-/* .list-noStyle {
-    list-style: none;
-}
-
-.list-noBullets {
-    list-style: none;
-} */
 
 /* // input */
 .container_input-icon {
@@ -40,23 +33,3 @@
 .input-icon {
     border: none;
 }
-
-/* badge */
-/* .badge {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    background-color: var(--red);
-    color: var(--white);
-    font-size: 0.75rem;
-    width: fit-content;
-    height: fit-content;
-    padding: 0.3rem;
-    border-radius: 1rem;
-    transform: translate(50%, -50%);
-} */
-
-
-
-
