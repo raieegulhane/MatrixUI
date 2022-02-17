@@ -79,3 +79,11 @@ body::-webkit-scrollbar-track {
     background: transparent;
     border-radius: var(--len2);
 }
+
+.heading {
+    font-family: var(--head-font);
+}
+
+.link-noDecoration {
+    text-decoration: none;
+}
