@@ -45,19 +45,30 @@
     gap: 20px;
 }
 
-.btn-primary {
+.card_btn-primary {
+    background-color: var(--primary-color);
+    color: var(--black);
     font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
 }
 
-.btn-icon {
+.card_btn-icon {
     background-color: var(--gray5);
     color: var(--gray1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     height: fit-content;
+    border: none;
+    cursor: pointer;
 }
 
-.btn-icon:hover {
-    background-color: var(--gray5);
+.card_btn-icon:hover {
+    color: var(--primary-color);
 }
 
 .card_icon {
