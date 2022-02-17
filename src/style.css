@@ -41,18 +41,10 @@
     --highlight: #ffff00;
 
 
-    /* padding */
-
     /* border-radius */
     --br-sq: 5px;
     --br-cr: 2rem;
     --br-rd: 50%;
-
-    /* margin */
-
-    /* length */
-    --len1: 5px;
-    --len2: 7px;
 }
 
 
