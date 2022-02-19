@@ -30,19 +30,19 @@
     font-size: 0.75rem;
 }
 
-.text-bold {
+.txt-bold {
     font-weight: bold;
 }
 
-.text-ittalic {
+.txt-ittalic {
     font-style: italic;
 }
 
-.text-underline {
+.txt-underline {
     text-decoration: underline;
 }
 
-.text-overline {
+.txt-overline {
     text-decoration: overline;
 }
 
