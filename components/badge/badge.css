@@ -1,7 +1,3 @@
-@import url("/src/style.css");
-@import url("/components_css/template.css");
-@import url("/components_css/avatar.css");
-
 .badge {
     position: absolute;
     right: 0;
